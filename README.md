@@ -1,4 +1,3 @@
-Pipeline
-========
+# Pipeline API
 
-Public API for the SemAnTE Pipeline.
+API to implementations of the SemAnTE pipeline.
