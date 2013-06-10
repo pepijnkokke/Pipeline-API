@@ -1,3 +1,3 @@
-# Pipeline API
+# SemAnTE Pipeline API
 
-API to implementations of the SemAnTE pipeline.
+[![Build Status](https://travis-ci.org/pepijnkokke/Pipeline-API.png)](https://travis-ci.org/pepijnkokke/Pipeline-API)
