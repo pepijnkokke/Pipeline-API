@@ -1,6 +1,4 @@
-
-before_script:
-  - sudo gem install buildr
-
-script:
-  - buildr
+language      : ruby
+rvm           : jruby-19mode
+before_script : gem install buildr
+script        : buildr
