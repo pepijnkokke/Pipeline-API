@@ -1,7 +1,5 @@
 
-
-before-install:
-  - sudo gem update --system
+before_script:
   - sudo gem install buildr
 
 script:
