@@ -1,7 +1,7 @@
-package semante.pipeline.util.impl;
+package semante.pipeline.impl;
 
+import semante.pipeline.Pair;
 import lombok.experimental.Value;
-import semante.pipeline.util.Pair;
 
 @Value
 public final class IPair<F, S> implements Pair<F, S> {

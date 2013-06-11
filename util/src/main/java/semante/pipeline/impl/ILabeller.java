@@ -1,12 +1,11 @@
-package semante.pipeline.util.binarytree.impl;
+package semante.pipeline.impl;
 
 import lombok.experimental.Value;
 import semante.pipeline.BinaryTree;
-import semante.pipeline.util.Pair;
-import semante.pipeline.util.SimpleBinaryTree;
-import semante.pipeline.util.binarytree.Labeller;
-import semante.pipeline.util.impl.IBinaryTree;
-import static semante.pipeline.util.impl.IPair.*;
+import semante.pipeline.Labeller;
+import semante.pipeline.Pair;
+import semante.pipeline.SimpleBinaryTree;
+import static semante.pipeline.impl.IPair.pair;
 
 @Value
 public final class ILabeller implements Labeller {

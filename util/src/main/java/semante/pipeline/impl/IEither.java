@@ -1,7 +1,7 @@
-package semante.pipeline.util.impl;
+package semante.pipeline.impl;
 
-import semante.pipeline.util.Either;
 import lombok.experimental.Value;
+import semante.pipeline.Either;
 
 public final class IEither {
 	

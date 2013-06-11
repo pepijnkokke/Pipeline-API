@@ -1,4 +1,4 @@
-package semante.pipeline.util;
+package semante.pipeline;
 
 
 public interface Pair<F, S> {

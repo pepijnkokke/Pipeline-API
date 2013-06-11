@@ -1,12 +1,11 @@
-package semante.pipeline.util.impl;
-
-import com.google.common.base.Function;
+package semante.pipeline.impl;
 
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Value;
 import semante.pipeline.BinaryTree;
-import semante.pipeline.util.binarytree.Functor;
-import semante.pipeline.util.binarytree.impl.IFunctor;
+import semante.pipeline.BinaryTreeFunctor;
+
+import com.google.common.base.Function;
 
 public final class IBinaryTree {
 	
@@ -22,10 +21,10 @@ public final class IBinaryTree {
 		return new INode<A,B>(value, left, right);
 	}
 	
-	public static final <A, B, C, D> Functor<A, B, C, D> functor(
+	public static final <A, B, C, D> BinaryTreeFunctor<A, B, C, D> functor(
 			final Function<A, C> a2C,
 			final Function<B, D> b2D) {
-		return new IFunctor<A, B, C, D>(a2C, b2D);
+		return new IBinaryTreeFunctor<A, B, C, D>(a2C, b2D);
 	}
 	
 	@Value

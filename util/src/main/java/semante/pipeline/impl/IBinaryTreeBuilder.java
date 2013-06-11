@@ -1,10 +1,9 @@
-package semante.pipeline.util.binarytree.impl;
+package semante.pipeline.impl;
 
 import semante.pipeline.BinaryTree;
-import semante.pipeline.util.binarytree.Identity;
-import semante.pipeline.util.impl.IBinaryTree;
+import semante.pipeline.BinaryTreeBuilder;
 
-public class IIdentity<A,B> implements Identity<A, B> {
+public class IBinaryTreeBuilder<A,B> implements BinaryTreeBuilder<A, B> {
 	
 	@Override
 	public BinaryTree<A, B> node(A value, BinaryTree<A, B> l,

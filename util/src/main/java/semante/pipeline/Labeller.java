@@ -1,9 +1,9 @@
-package semante.pipeline.util.binarytree;
+package semante.pipeline;
 
 import java.io.Serializable;
 
 import semante.pipeline.BinaryTree;
-import semante.pipeline.util.SimpleBinaryTree;
+import semante.pipeline.SimpleBinaryTree;
 
 public interface Labeller extends Serializable {
 	

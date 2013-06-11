@@ -1,7 +1,7 @@
-package semante.pipeline.util.impl;
+package semante.pipeline.impl;
 
 import lombok.experimental.Value;
-import semante.pipeline.util.SimpleBinaryTree;
+import semante.pipeline.SimpleBinaryTree;
 
 public final class ISimpleBinaryTree {
 

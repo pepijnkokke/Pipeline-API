@@ -1,7 +1,7 @@
-package semante.pipeline.util.impl;
+package semante.pipeline.impl;
 
-import semante.pipeline.Annotation;
 import lombok.experimental.Value;
+import semante.pipeline.Annotation;
 
 @Value
 public final class IAnnotation implements Annotation {

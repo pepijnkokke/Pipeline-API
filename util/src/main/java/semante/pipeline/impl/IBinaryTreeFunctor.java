@@ -1,14 +1,13 @@
-package semante.pipeline.util.binarytree.impl;
+package semante.pipeline.impl;
 
 import lombok.experimental.Value;
 import semante.pipeline.BinaryTree;
-import semante.pipeline.util.binarytree.Functor;
-import semante.pipeline.util.impl.IBinaryTree;
+import semante.pipeline.BinaryTreeFunctor;
 
 import com.google.common.base.Function;
 
 @Value
-public final class IFunctor<A,B,C,D> implements Functor<A,B,C,D> {
+public final class IBinaryTreeFunctor<A,B,C,D> implements BinaryTreeFunctor<A,B,C,D> {
 	
 	Function<A,C> a2C;
 	Function<B,D> b2D;
