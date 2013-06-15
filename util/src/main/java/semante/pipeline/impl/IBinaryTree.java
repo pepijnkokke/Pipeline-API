@@ -4,6 +4,7 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Value;
 import semante.pipeline.BinaryTree;
 import semante.pipeline.BinaryTreeFunctor;
+import semante.pipeline.SimpleBinaryTree;
 
 import com.google.common.base.Function;
 
@@ -34,7 +35,12 @@ public final class IBinaryTree {
 		B value;
 
 		@Override
-		public final <X> X accept(final Visitor<A, B, X> v) {
+		public final <X> X accept(final BinaryTree.Visitor<A, B, X> v) {
+			return v.leaf(value);
+		}
+
+		@Override
+		public final <X> X accept(final SimpleBinaryTree.Visitor<B, X> v) {
 			return v.leaf(value);
 		}
 	}
@@ -48,9 +54,14 @@ public final class IBinaryTree {
 		BinaryTree<A,B> right;
 
 		@Override
-		public <X> X accept(final BinaryTree.Visitor<A,B,X> v) {
+		public final <X> X accept(final BinaryTree.Visitor<A,B,X> v) {
 			return v.node(value, left, right);
 		}
+
+		@Override
+		public final <X> X accept(final SimpleBinaryTree.Visitor<B, X> v) {
+			return v.node(left, right);
+		}		
 	}
 	
 	private IBinaryTree() {}

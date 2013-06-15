@@ -7,10 +7,10 @@ import semante.pipeline.Annotation;
 public final class IAnnotation implements Annotation {
 	
 	String text;
-	String annotation;
+	String category;
 	
 	@Override
 	public final <X> X accept(Visitor<X> v) {
-		return v.annotation(text, annotation);
+		return v.annotation(text, category);
 	}
 }

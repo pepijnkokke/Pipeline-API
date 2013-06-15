@@ -1,6 +1,6 @@
 package semante.pipeline;
 
-public interface BinaryTree<A,B> {
+public interface BinaryTree<A,B> extends SimpleBinaryTree<B> {
 	
 	public interface Visitor<A,B,X> {
 		X node(A a, BinaryTree<A,B> left, BinaryTree<A,B> right);
