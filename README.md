@@ -1,5 +1,5 @@
-Interface to the Pelican system
-===============================
+API for the SemAnTE Pipeline
+============================
 
 [![Build Status](https://travis-ci.org/pepijnkokke/pelican-api.png)](https://travis-ci.org/pepijnkokke/pelican-api)
 
