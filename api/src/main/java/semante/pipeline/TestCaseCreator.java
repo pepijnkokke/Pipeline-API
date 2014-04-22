@@ -15,8 +15,8 @@ public interface TestCaseCreator {
 			final String name,
 			final String comment,
 			final BinaryTree<ID, Annotation> text,
-			final BinaryTree<ID, Annotation> hypothesis,
-			final String subsumptions);
+			final BinaryTree<ID, Annotation> hypo,
+			final Iterable<Pair<BinaryTree<ID, Annotation>, BinaryTree<ID, Annotation>>> subs);
 	
 	/**
 	 * As {@link TestCaseCreator#createTestCase(String, String, BinaryTree, BinaryTree, String)},
@@ -29,5 +29,5 @@ public interface TestCaseCreator {
 			final String comment,
 			final SimpleBinaryTree<Annotation> text,
 			final SimpleBinaryTree<Annotation> hypothesis,
-			final String subsumptions);
+			final Iterable<Pair<SimpleBinaryTree<Annotation>, SimpleBinaryTree<Annotation>>> subs);
 }

@@ -15,8 +15,8 @@ public interface Pipeline extends TestCaseCreator {
 	 */
 	<ID> Result<ID> prove(
 			final BinaryTree<ID, Annotation> text,
-			final BinaryTree<ID, Annotation> hypothesis,
-			final Iterable<Pair<BinaryTree<ID, Annotation>, BinaryTree<ID, Annotation>>> subsumptions) throws Exception;
+			final BinaryTree<ID, Annotation> hypo,
+			final Iterable<Pair<BinaryTree<ID, Annotation>, BinaryTree<ID, Annotation>>> subs) throws Exception;
 	
 	/**
 	 * Provides the user with a list of all categories supported by the current lexicon.

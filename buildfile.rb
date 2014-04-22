@@ -2,11 +2,11 @@
 repositories.remote << 'http://repo1.maven.org/maven2'
 
 # maven dependencies
-LOMBOK  = 'org.projectlombok:lombok:jar:0.11.6'
+LOMBOK  = 'org.projectlombok:lombok:jar:1.12.6'
 GUAVA   = 'com.google.guava:guava:jar:13.0.1'
 
 define 'pipeline' do
-  project.version = '3.0.1'
+  project.version = '3.0.2'
 
   define 'api' do
     eclipse.natures :java
