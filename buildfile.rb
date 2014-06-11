@@ -6,7 +6,7 @@ LOMBOK  = 'org.projectlombok:lombok:jar:1.12.6'
 GUAVA   = 'com.google.guava:guava:jar:13.0.1'
 
 define 'pipeline' do
-  project.version = '3.3.1'
+  project.version = '3.3.2'
 
   define 'api' do
     eclipse.natures :java

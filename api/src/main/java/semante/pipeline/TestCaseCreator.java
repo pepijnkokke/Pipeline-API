@@ -13,7 +13,8 @@ public interface TestCaseCreator {
 	 * @return Java source for a JUnit unit test
 	 */
 	<ID> String createTestCase(
-			final String name,
+			final String packageName,
+			final String className,
 			final String comment,
 			final BinaryTree<ID, Annotation> text,
 			final BinaryTree<ID, Annotation> hypo,
@@ -27,7 +28,8 @@ public interface TestCaseCreator {
 	 * <em>Note: nodes are labelled in a breadth-first maner.</em>
 	 */
 	String createTestCase(
-			final String name,
+			final String packageName,
+			final String className,
 			final String comment,
 			final SimpleBinaryTree<Annotation> text,
 			final SimpleBinaryTree<Annotation> hypothesis,
