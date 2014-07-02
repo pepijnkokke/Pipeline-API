@@ -1,5 +1,7 @@
 package semante.pipeline;
 
+import java.util.List;
+
 public interface TestCaseCreator {
 
 	/**
@@ -16,23 +18,9 @@ public interface TestCaseCreator {
 			final String packageName,
 			final String className,
 			final String comment,
-			final BinaryTree<ID, Annotation> text,
-			final BinaryTree<ID, Annotation> hypo,
-			final Iterable<Pair<BinaryTree<ID, Annotation>, BinaryTree<ID, Annotation>>> subs,
+			final BinaryTree<ID, Annotation<ID>> text,
+			final BinaryTree<ID, Annotation<ID>> hypo,
+			final List<Pair<ID,ID>> subs,
 			final ResultType resultType);
 	
-	/**
-	 * As {@link TestCaseCreator#createTestCase(String, String, BinaryTree, BinaryTree, String)},
-	 * but labels the nodes in the annotation trees internally.
-	 * 
-	 * <em>Note: nodes are labelled in a breadth-first maner.</em>
-	 */
-	String createTestCase(
-			final String packageName,
-			final String className,
-			final String comment,
-			final SimpleBinaryTree<Annotation> text,
-			final SimpleBinaryTree<Annotation> hypothesis,
-			final Iterable<Pair<SimpleBinaryTree<Annotation>, SimpleBinaryTree<Annotation>>> subs,
-			final ResultType resultType);
 }

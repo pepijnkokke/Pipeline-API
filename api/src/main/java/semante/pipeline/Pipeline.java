@@ -14,9 +14,9 @@ public interface Pipeline extends TestCaseCreator {
 	 * @throws Exception if either the text or the hypothesis is not well-typed or reducible to first-order logic
 	 */
 	<ID> Result<ID> prove(
-			final BinaryTree<ID, Annotation> text,
-			final BinaryTree<ID, Annotation> hypo,
-			final Iterable<Pair<BinaryTree<ID, Annotation>, BinaryTree<ID, Annotation>>> subs) throws Exception;
+			final BinaryTree<ID, Annotation<ID>> text,
+			final BinaryTree<ID, Annotation<ID>> hypo,
+			final List<Pair<ID,ID>> subs) throws Exception;
 	
 	/**
 	 * Provides the user with a list of all categories supported by the current lexicon.

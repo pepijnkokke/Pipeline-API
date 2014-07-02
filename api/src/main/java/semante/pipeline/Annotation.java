@@ -1,14 +1,15 @@
 package semante.pipeline;
 
-public interface Annotation {
+public interface Annotation<ID> {
 	
-	public String getText();
-	public String getCategory();
+	public ID 		getId();
+	public String 	getText();
+	public String 	getCategory();
 
-	public interface Visitor<X> {
-		X annotation(String text, String category);
+	public interface Visitor<X,ID> {
+		X annotation(ID id, String text, String category);
 	}
 	
-	<X> X accept(Visitor<X> v);
+	<X> X accept(Visitor<X,ID> v);
 	
 }
